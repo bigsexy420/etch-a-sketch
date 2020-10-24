@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main {
+    display: flex;
+}
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#etch-a-sketch-container {
+    margin:auto;
+    width: 40vw;
+    height: 60vh;
+}
+#etch-a-sketch-grid {
+    height: 100%;
+    display: grid;
+    --grid-size:16;
+    grid-template-columns: repeat(var(--grid-size), 1fr);
+    grid-template-rows: repeat(var(--grid-size), 1fr);
+}
+.grid {
+    background-color: black;
+    color: white;
+    border: solid 1px green;
+    width: 100%;
+    height: 100%;
+}
